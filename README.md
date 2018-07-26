@@ -1,5 +1,5 @@
 
-*Cualquier duda que te pueda surgir puedes escribir un corre electrónico a [Alex](mailto:acarrasco@profile.es) y te responderé lo antes posible.*
+*Cualquier duda que te pueda surgir puedes escribir un correo electrónico a [Alex](mailto:acarrasco@profile.es) y te responderé lo antes posible.*
 
 ---
 
@@ -29,4 +29,7 @@ la region, la población, las monedas que utilizan, los lenguajes que se
 hablan y las zonas horarias que tiene. A parte se debera mostrar la bandera
 del país.
 
-Se valorará el código sobre todo si se siguen buenas prácticas.
+Se valorará el código sobre todo si se siguen buenas prácticas y con este ejercicio 
+también el objetivo es que uses todo lo que se te vaya ocurriendo como por ejemplo 
+**Inputs**. En cuanto al css no es un factor importante, será positivo verlo bonito
+pero no relevante. Suerte!
