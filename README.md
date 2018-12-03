@@ -1,35 +1,27 @@
+# AngularTest
 
-*Cualquier duda que te pueda surgir puedes escribir un correo electrónico a [Alex](mailto:acarrasco@profile.es) y te responderé lo antes posible.*
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.
 
----
+## Development server
 
-## Prueba de Angular de Profile
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-Primeros pasos:
+## Code scaffolding
 
-1. Clonar el proyecto .
-2. Crear una nueva rama llamada **test-mi-nombre**.
-3. Crear un proyecto en Angular y desarrollar según las especificaciones de abajo.
-4. Una vez terminado el proyecto subirlo con el último **Commint** que diga: *finish*.
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
----
+## Build
 
-## Especificaciones
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-Se deberá hacer una aplicación web en la que por defecto naveguemos a la url: 
-*home* donde se mostrará un listado de países. Estos países se recuperaran del
-Web Service: *https://restcountries.eu/rest/v2/all?fields=name;alpha3Code*.
-Cuando cliquemos encima de un país navegaremos a una página donde se mostrará
-la información de ese páis y la url será: *detail/:id*. El id se encuentra
-en el array de países como **alpha3Code**. Con este id recuperaremos la info
-de ese país con el Web Service: 
-*https://restcountries.eu/rest/v2/alpha/${alpha3Code}*. 
-El detalle deberá mostrarse: el nombre, la capital, la subregion, 
-la region, la población, las monedas que utilizan, los lenguajes que se
-hablan y las zonas horarias que tiene. A parte se debera mostrar la bandera
-del país.
+## Running unit tests
 
-Se valorará el código sobre todo si se siguen buenas prácticas y con este ejercicio 
-también el objetivo es que uses todo lo que se te vaya ocurriendo como por ejemplo 
-**Inputs**. En cuanto al css no es un factor importante, será positivo verlo bonito
-pero no relevante. Suerte!
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
