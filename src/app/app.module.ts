@@ -8,6 +8,8 @@ import { ListViewComponent } from './list-view/list-view.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { CountryDetailComponent } from './country-detail/country-detail.component';
 import { CountryCardComponent } from './country-card/country-card.component';
+import { SearchComponent } from './search/search.component';
+import { FilterListPipe } from './filter-list.pipe';
 // import { RouterModule } from '@angular/router';
 
 @NgModule({
@@ -15,7 +17,9 @@ import { CountryCardComponent } from './country-card/country-card.component';
     AppComponent,
     ListViewComponent,
     CountryDetailComponent,
-    CountryCardComponent
+    CountryCardComponent,
+    SearchComponent,
+    FilterListPipe
   ],
   imports: [
     AppRoutingModule,

@@ -9,6 +9,7 @@ import { CountryService } from '../country.service';
 })
 export class ListViewComponent implements OnInit {
   countries: Country[];
+  searchTerm: string;
 
   constructor(private countryService: CountryService) { }
 

@@ -1,5 +1,10 @@
-<ul class="country-grid">
-  <li *ngFor="let country of countries">
+
+<div class="search-bar">
+  <label>Search:</label>
+  <input #searchBox [(ngModel)]="searchTerm" #ctrl="ngModel" type="text" class="search-bar__input" />
+</div>
+<ul *ngIf="countries" class="country-grid">
+  <li *ngFor="let country of countries | filterList:searchTerm">
     <app-country-card [country]="country"></app-country-card>
   </li>
 </ul>

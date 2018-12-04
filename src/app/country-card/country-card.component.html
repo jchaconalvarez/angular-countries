@@ -4,10 +4,10 @@
     <img src={{country.flag}} class="country-card__img" />
     <div class="country-card__info">
       <ul>
-        <li *ngIf="country.capital; else elseCapital">Capital: {{country.capital}}</li>
-        <ng-template #elseCapital>Capital: ---</ng-template>
-        <li *ngIf="country.population < 10000000; else elsePopulation">Population: {{country.population}}</li>
-        <ng-template #elsePopulation>Population: {{country.population / 10000000}} million</ng-template>
+        <li *ngIf="country.capital; else elseCapital"><b>Capital:</b> {{country.capital}}</li>
+        <ng-template #elseCapital><b>Capital:</b> ---</ng-template>
+        <li *ngIf="country.population < 10000000; else elsePopulation"><b>Population:</b> {{country.population}}</li>
+        <ng-template #elsePopulation><b>Population:</b> {{country.population / 10000000 | number}} million</ng-template>
       </ul>
     </div>
   </div>
