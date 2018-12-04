@@ -10,7 +10,7 @@ import { Country } from './country';
 })
 export class CountryService {
 
-  private countryUrl = `https://restcountries.eu/rest/v2/all?fields=name;alpha3Code`;
+  private countryUrl = `https://restcountries.eu/rest/v2/all`;
 
   constructor(private http: HttpClient) { }
 

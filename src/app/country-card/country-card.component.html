@@ -1,0 +1,14 @@
+<a routerLink="/detail/{{country.alpha3Code}}">
+  <div class="country-card">
+    <h3 class="country-card__heading">{{country.name}}</h3>
+    <img src={{country.flag}} class="country-card__img" />
+    <div class="country-card__info">
+      <ul>
+        <li *ngIf="country.capital; else elseCapital">Capital: {{country.capital}}</li>
+        <ng-template #elseCapital>Capital: ---</ng-template>
+        <li *ngIf="country.population < 10000000; else elsePopulation">Population: {{country.population}}</li>
+        <ng-template #elsePopulation>Population: {{country.population / 10000000}} million</ng-template>
+      </ul>
+    </div>
+  </div>
+</a>

@@ -6,7 +6,7 @@ import { CountryDetailComponent } from './country-detail/country-detail.componen
 const routes: Routes = [
   { path: '', redirectTo: '/countries', pathMatch: 'full' },
   { path: 'countries', component: ListViewComponent },
-  { path: 'country/:id', component: CountryDetailComponent },
+  { path: 'detail/:id', component: CountryDetailComponent },
 ];
 
 @NgModule({

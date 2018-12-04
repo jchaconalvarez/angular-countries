@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { ListViewComponent } from './list-view/list-view.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { CountryDetailComponent } from './country-detail/country-detail.component';
+import { CountryCardComponent } from './country-card/country-card.component';
 // import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListViewComponent,
-    CountryDetailComponent
+    CountryDetailComponent,
+    CountryCardComponent
   ],
   imports: [
     AppRoutingModule,

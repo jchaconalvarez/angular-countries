@@ -1,5 +1,14 @@
-<h1>{{country.alpha3Code}}</h1>
-<ul>
-  <li>{{country.name}}</li>
-  <li>{{country.capital}}</li>
-</ul>
+<div class="country-detail">
+  <h2 class="country-detail__heading">{{country.name}}</h2>
+  <img src={{country.flag}} class="country-detail__img" />
+  <ul class="country-detail__info">
+    <li><b>Capital:</b> {{country.capital}}</li>
+    <li><b>Region:</b> {{country.region}}</li>
+    <li><b>Subregion:</b> {{country.subregion}}</li>
+    <li><b>Population:</b> {{country.population}}</li>
+    <li><b>Currency:</b><span *ngFor="let currency of country.currencies"> {{currency.name}}</span></li>
+    <li><b>Languages:</b><ul *ngFor="let language of country.languages"> {{language.name}} </ul></li>
+    <li><b>Timezones:</b><ul *ngFor="let timezone of country.timezones"> {{timezone}}</ul></li>
+  </ul>
+  <button (click)="goBack()" class="button">Return</button>
+</div>

@@ -1,7 +1,5 @@
-<ul>
+<ul class="country-grid">
   <li *ngFor="let country of countries">
-    <a routerLink="/country/{{country.alpha3Code}}">
-      <span>{{country.alpha3Code}}</span>
-    </a>
+    <app-country-card [country]="country"></app-country-card>
   </li>
 </ul>

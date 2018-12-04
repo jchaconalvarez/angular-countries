@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+  margin: 0;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FFF;
+}
+
+body {
+  margin: 6rem;
+  background: #111133;
+}
+
+body h1 {
+  text-align: center;
+}
