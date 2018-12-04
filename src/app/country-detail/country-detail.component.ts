@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
 import { Country } from '../country';
+import { CountryService } from '../country.service';
 
 @Component({
   selector: 'app-country-detail',
@@ -9,9 +12,20 @@ import { Country } from '../country';
 export class CountryDetailComponent implements OnInit {
   country: Country;
 
-  constructor() { }
+  constructor(
+    private route: ActivatedRoute,
+    private countryService: CountryService,
+    private location: Location,
+  ) { }
 
   ngOnInit() {
+    this.getCountry();
   }
 
+  getCountry(): void {
+    const id = this.route.snapshot.paramMap.get('id');
+    console.log('ID: ', id);
+    this.countryService.getCountry(id)
+      .subscribe(country => this.country = country);
+  }
 }

@@ -23,6 +23,7 @@ export class CountryService {
 
   getCountry(id: string): Observable<Country> {
     const url = `https://restcountries.eu/rest/v2/alpha/${id}`;
+    console.log('URL: ', url);
     return this.http.get<Country>(url)
       .pipe(
         catchError(this.handleError<Country>(`getCountry id=${id}`))
